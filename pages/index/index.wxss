@@ -1,21 +1,27 @@
-/**index.wxss**/
-.userinfo {
+/* pages/index/index.wxss */
+.indexContainer{
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: #afd;
+  height: 100%;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
+.avatarUrl{
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
+  margin: 100rpx 0;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.userName{
+  font-size: 32rpx;
+  margin: 100rpx 0;
 }
-
-.usermotto {
-  margin-top: 200px;
+.goStudy{
+  width: 300rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border: 1rpx solid#333;
+  border-radius: 10rpx;
 }

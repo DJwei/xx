@@ -1,6 +1,6 @@
 <view  class="indexContainer">
-  <image class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
-  <button bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo">获取用户信息</button><!--授权只会授权一次-->
+  <image wx:if='{{userInfo.avatarUrl}}' class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+  <button wx:else bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo">获取用户信息</button><!--授权只会授权一次-->
   <text class="userName">{{userInfo.nickname}}</text>
   <!--测试事件绑定-->
    <!-- <view class="goStudy" catchtap="handleParent">

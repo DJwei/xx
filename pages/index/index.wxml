@@ -1,7 +1,13 @@
 <view  class="indexContainer">
-  <image class="avatarUrl" src="/images/picture.JPG"></image>
-  <text class="userName">{{msg}}</text>
-    <view class="goStudy" catchtap="handleParent">
+  <image class="avatarUrl" src="{{userInfo.avatarUrl}}"></image>
+  <button bindgetuserinfo="handleGetUserInfo" open-type="getUserInfo">获取用户信息</button><!--授权只会授权一次-->
+  <text class="userName">{{userInfo.nickname}}</text>
+  <!--测试事件绑定-->
+   <!-- <view class="goStudy" catchtap="handleParent">
         <text catchtap="handleChild">holle world</text>
+    </view>
+</view>-->
+      <view class="goStudy" catchtap="toLogs">
+        <text >holle world</text>
     </view>
 </view>
